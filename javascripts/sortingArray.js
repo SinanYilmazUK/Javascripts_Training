@@ -1,5 +1,3 @@
-
-
 //sorting String Array
 let fruits=["banana","apple","mango","pomegrante"];
 fruits.sort();
@@ -14,4 +12,3 @@ console.log(scores); //[12, 14, 16, 19, 3]
 
 //Bubble sorting
 console.log(scores.sort((a,b)=>a-b));//[3, 12, 14, 16, 19]
-
