@@ -42,6 +42,15 @@ let newFilterEvenScores = scores.filter((score) => score % 2 == 0);
 console.log(newFilterEvenScores);
 
 //map method
-let mapArray = newFilterEvenScores.map(score=>score*3)
+let mapArray = newFilterEvenScores.map((score) => score * 3);
 console.log(mapArray);
 
+// All methods in just one line
+let sumValues = scores
+  .filter((scores) => scores % 2 == 0)
+  .map((scores) => scores * 3)
+  .reduce((sum, total) => sum + total, 0);
+
+  console.log(sumValues);
+  
+  
