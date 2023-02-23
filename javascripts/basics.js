@@ -53,4 +53,3 @@ let sumValues = scores
 
   console.log(sumValues);
   
-  
