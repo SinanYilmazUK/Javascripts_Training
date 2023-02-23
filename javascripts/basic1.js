@@ -44,4 +44,3 @@ console.log(newFilterEvenScores);
 //map method
 let mapArray = newFilterEvenScores.map(score=>score*3)
 console.log(mapArray);
-
