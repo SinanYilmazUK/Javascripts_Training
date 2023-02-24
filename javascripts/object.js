@@ -1,10 +1,11 @@
+const Person = require("./class");
 let person = {
   firstName: "Tim",
-  lastName: "Joe", 
-  age : 24,
-  fullname :function(){
-    console.log(this.firstName+this.lastName);
-  }
+  lastName: "Joe",
+  age: 24,
+  fullname: function () {
+    console.log(this.firstName + this.lastName);
+  },
 };
 console.log(person.fullname()); //TimJoe
 console.log(person.lastName); // Joe
@@ -21,7 +22,10 @@ console.log(person); //{firstName: 'Tim Dane', lastName: 'Joe'}
 console.log("gender" in person); //false
 
 for (let key in person) {
-  console.log(person[key]);   
+  console.log(person[key]);
 }
 // Tim Dane
 // Joe
+
+let person2 = new Person("Chris", "Edward");
+console.warn(person2.fullName());
